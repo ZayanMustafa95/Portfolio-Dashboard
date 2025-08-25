@@ -10,6 +10,7 @@ import Home from "../pages/Home";
 import Settings from "../pages/Settings";
 import ProtectedRoute from "./ProtectedRoute";
 import Blogs from "../pages/Blogs";
+import Eproducts from "../components/Eproducts";
 
 const Routers = () => {
   return (
@@ -31,6 +32,7 @@ const Routers = () => {
         <Route index element={<Home />} />
         <Route path="settings" element={<Settings />} />
         <Route path="blog" element={<Blogs />}/>
+        <Route path="e-products" element={<Eproducts />} />
       </Route>
 
       <Route path="*" element={<Navigate to="/login" replace />} />

@@ -1,5 +1,6 @@
 import { FaHome, FaCog } from "react-icons/fa";
 import { FaBloggerB } from "react-icons/fa6";
+import { MdOutlineProductionQuantityLimits } from "react-icons/md";
 
 import { Link, useNavigate } from "react-router-dom";
 import { CiLogout } from "react-icons/ci";
@@ -18,7 +19,12 @@ const Sidebar = () => {
   const menuItems = [
     { name: "Home", icon: <FaHome />, path: "/dashboard" },
     { name: "Settings", icon: <FaCog />, path: "/dashboard/settings" },
-    { name: "BLogs", icon: <FaBloggerB />, path: "/dashboard/blog" },
+    { name: "Blogs", icon: <FaBloggerB />, path: "/dashboard/blog" },
+    {
+      name: "Ecommernece",
+      icon: <MdOutlineProductionQuantityLimits />,
+      path: "/dashboard/e-products",
+    },
   ];
 
   return (
